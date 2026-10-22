@@ -1,0 +1,42 @@
+C1 {'n_source': 830, 'recoded_55_to_5': 1, 'excluded_birads0': 5, 'excluded_birads6': 9, 'n_analysis': 816, 'n_malignant': 393, 'n_benign': 423, 'age_mean': 55.682598039215684, 'age_sd': 14.690792278899991}
+C1 descriptors + age
+  [C1-desc] Logistic regression            AUC 0.867 ± 0.001  (8s)
+  [C1-desc] SVM (RBF)                      AUC 0.840 ± 0.003  (16s)
+  [C1-desc] Random forest                  AUC 0.855 ± 0.001  (202s)
+  [C1-desc] XGBoost                        AUC 0.861 ± 0.001  (14s)
+  [C1-desc] MLP                            AUC 0.855 ± 0.005  (21s)
+  [C1-desc] Stacked ensemble (LR+RF+XGB)   AUC 0.861 ± 0.002  (118s)
+C1 descriptors + age + BI-RADS
+  [C1-all] Logistic regression            AUC 0.909 ± 0.000  (6s)
+  [C1-all] SVM (RBF)                      AUC 0.894 ± 0.002  (12s)
+  [C1-all] Random forest                  AUC 0.902 ± 0.002  (198s)
+  [C1-all] XGBoost                        AUC 0.898 ± 0.002  (13s)
+  [C1-all] MLP                            AUC 0.895 ± 0.004  (22s)
+  [C1-all] Stacked ensemble (LR+RF+XGB)   AUC 0.903 ± 0.002  (114s)
+C3 WDBC
+  [C3] Logistic regression            AUC 0.995 ± 0.001  (4s)
+  [C3] SVM (RBF)                      AUC 0.995 ± 0.000  (6s)
+  [C3] Random forest                  AUC 0.989 ± 0.001  (261s)
+  [C3] XGBoost                        AUC 0.993 ± 0.001  (33s)
+  [C3] MLP                            AUC 0.980 ± 0.002  (21s)
+  [C3] Stacked ensemble (LR+RF+XGB)   AUC 0.995 ± 0.000  (163s)
+C2 imbalance study
+  [C2] Logistic regression  None                 AUC 0.915 PR 0.613 sens@.5 0.404 spec 0.998
+  [C2] Logistic regression  Class weighting      AUC 0.917 PR 0.538 sens@.5 0.858 spec 0.900
+  [C2] Logistic regression  Random oversampling  AUC 0.917 PR 0.543 sens@.5 0.858 spec 0.900
+  [C2] Logistic regression  SMOTE                AUC 0.918 PR 0.534 sens@.5 0.862 spec 0.903
+  [C2] Logistic regression  Borderline-SMOTE     AUC 0.923 PR 0.471 sens@.5 0.877 spec 0.890
+  [C2] Logistic regression  ADASYN               AUC 0.921 PR 0.449 sens@.5 0.904 spec 0.830
+  [C2] Random forest        None                 AUC 0.951 PR 0.755 sens@.5 0.542 spec 0.998
+  [C2] Random forest        Class weighting      AUC 0.944 PR 0.735 sens@.5 0.704 spec 0.991
+  [C2] Random forest        Random oversampling  AUC 0.933 PR 0.736 sens@.5 0.623 spec 0.996
+  [C2] Random forest        SMOTE                AUC 0.946 PR 0.737 sens@.5 0.758 spec 0.985
+  [C2] Random forest        Borderline-SMOTE     AUC 0.950 PR 0.688 sens@.5 0.719 spec 0.990
+  [C2] Random forest        ADASYN               AUC 0.940 PR 0.692 sens@.5 0.762 spec 0.983
+  [C2] XGBoost              None                 AUC 0.954 PR 0.763 sens@.5 0.600 spec 0.998
+  [C2] XGBoost              Class weighting      AUC 0.946 PR 0.748 sens@.5 0.804 spec 0.983
+  [C2] XGBoost              Random oversampling  AUC 0.943 PR 0.762 sens@.5 0.812 spec 0.983
+  [C2] XGBoost              SMOTE                AUC 0.944 PR 0.759 sens@.5 0.808 spec 0.982
+  [C2] XGBoost              Borderline-SMOTE     AUC 0.951 PR 0.719 sens@.5 0.777 spec 0.986
+  [C2] XGBoost              ADASYN               AUC 0.940 PR 0.728 sens@.5 0.812 spec 0.977
+done in 24.6 min
