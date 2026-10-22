@@ -1,0 +1,11 @@
+{
+  "title": "Supplementary File S1: Code, data and results for \"Integrating Structured Mammography Report Descriptors with Image-Derived Features for Breast Cancer Diagnosis\"",
+  "description": "Code, public de-identified datasets, raw outputs and figures that reproduce every number, table and figure in the manuscript \"Integrating Structured Mammography Report Descriptors with Image-Derived Features for Breast Cancer Diagnosis\". Datasets: UCI Mammographic Mass (Elter et al. 2007), Woods et al. (1993) mammography microcalcification features, and Wisconsin Diagnostic Breast Cancer (Street et al. 1993).",
+  "upload_type": "software",
+  "creators": [
+    { "name": "Dey, Rajesh" }
+  ],
+  "keywords": ["breast cancer", "mammography", "BI-RADS", "machine learning", "SHAP", "calibration", "decision curve analysis"],
+  "license": "MIT",
+  "version": "v1.0"
+}
